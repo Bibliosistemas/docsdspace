@@ -49,11 +49,11 @@ module.exports = {
         ],
         sidebar: {
             '/guide/': [{
-                title: 'Guide',
+                title: 'Guía',
                 collapsable: true,
                 children: [
-                    'personalizacion',
                     'intro',
+                    'personalizacion',
                     'instalacion-entorno',
                     'crear-tema',
                 ]
