@@ -1,10 +1,16 @@
 # Creación de un tema
+Configurar primero el tema en el archivo config
 
+::: details Ver el código
 ```js
 themes:
   - name: custom 
 ```
+:::
 
+Cualquier componente debe ser agregado para ser importado al inicio 
+
+::: details Ver el código
 import { Component } from '@angular/core';
 import { FooterComponent as BaseComponent } from '../../../../app/footer/footer.component';
 
@@ -23,3 +29,5 @@ export class FooterComponent extends BaseComponent {
 }
 
 ```
+
+:::

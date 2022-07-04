@@ -49,7 +49,9 @@ module.exports = {
                 title: 'Guide',
                 collapsable: true,
                 children: [
-                    '',
+                    'personalizacion',
+                    'intro',
+                    'instalacion-entorno',
                     'crear-tema',
                 ]
             }],
