@@ -34,6 +34,9 @@ module.exports = {
         docsDir: '',
         editLinkText: '',
         lastUpdated: true,
+
+        logo: '/logoceleste.png',
+
         nav: [{
                 text: 'Guía',
                 link: '/guide/',

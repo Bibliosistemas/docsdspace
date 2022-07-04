@@ -1,6 +1,5 @@
 ---
 home: true
-heroImage: ./image.png
 tagline: Documentación
 actionText: Inicio →
 actionLink: /guide/
