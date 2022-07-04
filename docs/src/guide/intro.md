@@ -7,3 +7,7 @@ En general debería ser suficiente como para adaptar al diseño de la instituci�
 Si bien existen 2 temas es preferible utilizar el tema completo ya que tiene todas las opciones necesarias para personalizar. 
 
 Se debe mantener un repositorio git específico.
+
+- unod
+- dos
+- tres 
