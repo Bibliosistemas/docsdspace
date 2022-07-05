@@ -55,6 +55,7 @@ module.exports = {
                     'intro',
                     'personalizacion',
                     'instalacion-entorno',
+                    'desarrollo-en-docker',
                     'crear-tema',
                 ]
             }],
