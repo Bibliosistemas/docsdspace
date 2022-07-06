@@ -10,6 +10,6 @@ Para iniciar el desarrollo se requieren de algunos programas y configuraciones.
 - [yarn](https://yarnpkg.com/) 
 - [git](https://git-scm.com/) 
 
+Hemos optado para impartir la capacitación y con el fin de mantener un entorno de desarrollo simple realizar la configuración utilizando contenedores docker para correr el entorno dev de Angular y la posterior distribución una vez que el trabajo esté concluído.
 
 
-![logo Bibliosistemas](./logoceleste.png)

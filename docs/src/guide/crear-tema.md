@@ -11,11 +11,12 @@ themes:
 Cualquier componente debe ser agregado para ser importado al inicio 
 
 ::: details Ver el código
+```js
 import { Component } from '@angular/core';
 import { FooterComponent as BaseComponent } from '../../../../app/footer/footer.component';
 
-Import component 
-```js
+//Import component 
+
 @Component({
   selector: 'ds-footer',
   styleUrls: ['footer.component.scss'],

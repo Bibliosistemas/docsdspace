@@ -30,12 +30,12 @@ module.exports = {
      */
     themeConfig: {
         repo: 'https://github.com/horaciod/docsdspace',
-        editLinks: false,
+        editLinks: true,
         docsDir: '',
-        editLinkText: '',
+        editLinkText: 'Editar',
         lastUpdated: true,
 
-        logo: '/logoceleste.png',
+        logo: '/logonegro.png',
 
         nav: [{
                 text: 'Guía',
@@ -54,7 +54,6 @@ module.exports = {
                 children: [
                     'intro',
                     'personalizacion',
-                    'instalacion-entorno',
                     'desarrollo-en-docker',
                     'crear-tema',
                 ]
