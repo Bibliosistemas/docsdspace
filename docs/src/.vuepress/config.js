@@ -30,7 +30,7 @@ module.exports = {
      */
     themeConfig: {
         repo: 'https://github.com/horaciod/docsdspace',
-        editLinks: true,
+        editLinks: false,
         docsDir: '',
         editLinkText: 'Editar',
         lastUpdated: true,
