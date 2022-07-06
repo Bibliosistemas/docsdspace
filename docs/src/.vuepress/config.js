@@ -55,7 +55,7 @@ module.exports = {
                     'intro',
                     'personalizacion',
                     'desarrollo-en-docker',
-                    'crear-tema',
+                    'proxy-reverso'
                 ]
             }],
         }
