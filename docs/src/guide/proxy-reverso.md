@@ -4,9 +4,9 @@ Los contenedores Dspace-angular y DSpace-api-rest deben accederse (idealmente) d
 Al correr debajo del mismo dominio nos aseguramos que las peticiones desde el navegador a la API no produzcan errores de cross site scripting. 
 Ejemplo de instalacion de dspace en subdominio
 
-![subdominio](img/defproxy.png)
+![subdominio](./img/defproxy.png)
 
 
-![api ](img/defapi.png)
+![api ](./img/defapi.png)
 
-![](img/defssl.png)
+![](./img/defssl.png)
