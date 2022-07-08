@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Receta para servidores nginx | Personalización Dspace</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Starter template for a VuePress project - including CI for GH Pages hosting">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/docsdspace/assets/css/0.styles.7fdefd7e.css" as="style"><link rel="preload" href="/docsdspace/assets/js/app.4700a381.js" as="script"><link rel="preload" href="/docsdspace/assets/js/2.4b261e64.js" as="script"><link rel="preload" href="/docsdspace/assets/js/18.b124b611.js" as="script"><link rel="prefetch" href="/docsdspace/assets/js/10.1b77c1f9.js"><link rel="prefetch" href="/docsdspace/assets/js/11.097ec73f.js"><link rel="prefetch" href="/docsdspace/assets/js/12.5986c1ca.js"><link rel="prefetch" href="/docsdspace/assets/js/13.a9e2ad05.js"><link rel="prefetch" href="/docsdspace/assets/js/14.cc3b83d3.js"><link rel="prefetch" href="/docsdspace/assets/js/15.610ed4fd.js"><link rel="prefetch" href="/docsdspace/assets/js/16.8eb9ed58.js"><link rel="prefetch" href="/docsdspace/assets/js/17.1cf4ef9f.js"><link rel="prefetch" href="/docsdspace/assets/js/19.1d860155.js"><link rel="prefetch" href="/docsdspace/assets/js/3.f6029315.js"><link rel="prefetch" href="/docsdspace/assets/js/4.14236934.js"><link rel="prefetch" href="/docsdspace/assets/js/5.c61f92b7.js"><link rel="prefetch" href="/docsdspace/assets/js/6.fd98204b.js"><link rel="prefetch" href="/docsdspace/assets/js/7.60840f84.js"><link rel="prefetch" href="/docsdspace/assets/js/8.2f7cac19.js"><link rel="prefetch" href="/docsdspace/assets/js/9.9026d41f.js">
+    <link rel="stylesheet" href="/docsdspace/assets/css/0.styles.7fdefd7e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docsdspace/" class="home-link router-link-active"><img src="/docsdspace/logonegro.png" alt="Personalización Dspace" class="logo"> <span class="site-name can-hide">Personalización Dspace</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docsdspace/guide/" class="nav-link router-link-active">
+    Guía
+  </a></div><div class="nav-item"><a href="https://bibliosistemas.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    bibliosistemas.com
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/horaciod/docsdspace" target="_blank" rel="noopener noreferrer" class="repo-link">
+      GitHub
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docsdspace/guide/" class="nav-link router-link-active">
+    Guía
+  </a></div><div class="nav-item"><a href="https://bibliosistemas.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    bibliosistemas.com
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/horaciod/docsdspace" target="_blank" rel="noopener noreferrer" class="repo-link">
+      GitHub
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Guía</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docsdspace/guide/intro.html" class="sidebar-link">Introducción</a></li><li><a href="/docsdspace/guide/personalizacion.html" class="sidebar-link">La personalización de Dspace 7</a></li><li><a href="/docsdspace/guide/desarrollo-en-docker.html" class="sidebar-link">Desarrollo usando docker</a></li><li><a href="/docsdspace/guide/proxy-reverso.html" class="sidebar-link">Instalación de Dspace detrás de un proxy reverso</a></li><li><a href="/docsdspace/guide/receta-nginx.html" aria-current="page" class="active sidebar-link">Receta para servidores nginx</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="receta-para-servidores-nginx"><a href="#receta-para-servidores-nginx" class="header-anchor">#</a> Receta para servidores nginx</h1> <p>Receta completa para servidor NGINX de  ejemplo</p> <div class="language-conf extra-class"><pre class="language-text"><code># ------------------------------------------------------------
+# cursodspace.bibliosistemas.com
+# ------------------------------------------------------------
+
+
+server {
+  set $forward_scheme http;
+  set $server         &quot;170.187.154.148&quot;;
+  set $port           4000;
+
+  listen 80;
+listen [::]:80;
+
+listen 443 ssl http2;
+listen [::]:443 ssl http2;
+
+
+  server_name cursodspace.bibliosistemas.com;
+
+
+  # Let's Encrypt SSL
+  include conf.d/include/letsencrypt-acme-challenge.conf;
+  include conf.d/include/ssl-ciphers.conf;
+  ssl_certificate /etc/letsencrypt/live/npm-2/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/npm-2/privkey.pem;
+   # Force SSL
+    include conf.d/include/force-ssl.conf;
+
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header Connection $http_connection;
+proxy_http_version 1.1;
+  access_log /data/logs/proxy-host-1_access.log proxy;
+  error_log /data/logs/proxy-host-1_error.log warn;
+#### API SERVER 
+  location /server {
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Scheme $scheme;
+    proxy_set_header X-Forwarded-Proto  $scheme;
+    proxy_set_header X-Forwarded-For    $remote_addr;
+    proxy_set_header X-Real-IP		$remote_addr;
+    proxy_pass       http://170.187.154.148:8080;
+    # Force SSL
+    include conf.d/include/force-ssl.conf;
+
+    
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection $http_connection;
+    proxy_http_version 1.1;
+    
+   
+  }
+
+  location / {
+
+    
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection $http_connection;
+    proxy_http_version 1.1;
+    
+
+    # Proxy!
+    include conf.d/include/proxy.conf;
+  }
+
+
+  # Custom
+  include /data/nginx/custom/server_proxy[.]conf;
+}
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/8/2022, 3:03:32 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/docsdspace/guide/proxy-reverso.html" class="prev">
+          Instalación de Dspace detrás de un proxy reverso
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docsdspace/assets/js/app.4700a381.js" defer></script><script src="/docsdspace/assets/js/2.4b261e64.js" defer></script><script src="/docsdspace/assets/js/18.b124b611.js" defer></script>
+  </body>
+</html>
