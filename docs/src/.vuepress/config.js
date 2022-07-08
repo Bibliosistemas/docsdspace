@@ -55,7 +55,9 @@ module.exports = {
                     'intro',
                     'personalizacion',
                     'desarrollo-en-docker',
-                    'proxy-reverso'
+                    'proxy-reverso',
+                    'receta-nginx'
+
                 ]
             }],
         }
