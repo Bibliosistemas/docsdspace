@@ -56,7 +56,8 @@ module.exports = {
                     'personalizacion',
                     'desarrollo-en-docker',
                     'proxy-reverso',
-                    'receta-nginx'
+                    'receta-nginx',
+                    'cambios-docker-dspace.md'
 
                 ]
             }],
