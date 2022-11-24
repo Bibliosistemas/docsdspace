@@ -8,7 +8,7 @@ themes:
 ```
 :::
 
-Cualquier componente debe ser agregado para ser importado al inicio 
+Cualquier componente debe ser agregado para ser importado al inicio del sitio.
 
 ::: details Ver el código
 ```js
