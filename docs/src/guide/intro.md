@@ -1,6 +1,6 @@
 # Introducción 
 
-La interfaz web de  Dspace  desarrollada en Angular permite que se desarrolle en un entorno local. Se puede instalar solo el código del FrontEnd en local y usar la [api pública](https://api7.dspace.org/server/) para hacer las pruebas. 
+La interfaz web de  Dspace  desarrollada en Angular permite que se desarrolle en un entorno local. Se puede instalar solo el código del FrontEnd en local y usar la [API pública](https://api7.dspace.org/server/) para hacer las pruebas. 
 De esta manera es más sencillo trabajar en el diseño y trabajar con el entorno Angular.
 
 En general debería ser suficiente como para adaptar al diseño de la institución. 
